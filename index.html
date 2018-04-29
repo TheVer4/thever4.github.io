@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0018)http://thever4.ru/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>
 @TheVer4
 </title>
@@ -76,12 +76,103 @@ body{
 	display: none;
 	height: 0px;
 }
+
+.preload {
+	width: 100%;
+	height: 100%;
+	background: #333333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.pLogo {
+	font-family: 'Cleanvertising Light';
+	color: azure;
+	width: 300px;
+	height: 70px;
+	margin: 150px auto 50px auto;
+	font-size: 50px;
+	text-shadow: -1px 2px 2px #000;
+	text-align: center;
+	
+}
+.loader {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	top: 70px;
+	position: relative;
+}
+.loader1, .loader2 {
+	position: absolute;
+	border: 5px solid transparent;
+	border-radius: 50%;
+}
+.loader1 {
+	width: 70px;
+	height: 70px;
+	border-top: 5px solid azure;
+	border-bottom: 5px solid azure;
+	animation: clockwisespin 2s linear 3;
+}
+.loader2 {
+	width: 60px;
+	height: 60px;
+	border-left: 5px solid darkturquoise;
+	border-right: 5px solid darkturquoise;
+	top: 5px;
+	left: 5px;
+	animation: anticlockwisespin 2s linear 3;
+}
+
+@keyframes clockwisespin {
+	from {transform: rotate(0deg); }
+	to {transform: rotate(360deg);}
+}
+@keyframes anticlockwisespin {
+	from {transform: rotate(0deg); }
+	to {transform: rotate(-360deg);}
+}
+@keyframes fadeout {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
 </style>
 </head>
 <body>
 	<div id="navbutton">
 		<span style="height: ; border-radius: 10px; background-color:  #AE39D9; padding: 2%;">≡</span>
 	</div>
+	<div class="preload" id="preload">
+		<div class="pLogo">
+			Wait...<br><span style="color: darkturquoise;">We're making beauty!</span>
+		</div>
+		<div class="loader">
+			<div class="loader1"></div>
+			<div class="loader2"></div>
+		</div>
+	</div>
+	<script>
+	(function() {
+		var preload = document.getElementById("preload");
+		var loading = 0;
+		var id = setInterval(frame, 30);
+		
+		function frame() {
+			if(loading == 100) {
+				clearInterval(id);
+				preload.style.display = "none";
+			}
+			else { 
+				loading++;
+				if (loading == 90) {
+					preload.style.animation = "fadeout 1s ease";
+				}
+			}
+		}
+	})();
+	</script>
 <div id="main">
 <div id="content">
 <font color="white" size="70" face="Great Vibes Regular" id="logo">@TheVer4</font>
@@ -94,14 +185,15 @@ Maybe, that links can help you</font>
 <br>
 <br>
 <br>
-<a target="_blank" href="http://t.me/TheVer4"><img src="images/tg.png" class="social"></a>
-<a target="_blank" href="http://vk.com/TheVer4"><img src="images/vk.png" class="social"></a>
-<a target="_blank" href="https://www.instagram.com/thever4/"><img src="images/insta.png" class="social"></a>
+<a target="_blank" href="http://t.me/TheVer4"><img src="./TheVer4_files/tg.png" class="social"></a>
+<a target="_blank" href="http://vk.com/TheVer4"><img src="./TheVer4_files/vk.png" class="social"></a>
+<a target="_blank" href="https://www.instagram.com/thever4/"><img src="./TheVer4_files/insta.png" class="social"></a>
 </div>
 </div>
 <div id="footer">
-<font color="gray" face="Cleanvertising Light" size="3" style="margin-left: 46%;"><b>@TheVer4 &copy; 2017-2018</b></font>
+<font color="gray" face="Cleanvertising Light" size="3" style="margin-left: 46%;"><b>@TheVer4 © 2017-2018</b></font>
 <font color="gray" face="Cleanvertising Light" size="6" style="float: right; opacity: 0.4;"><b>12+</b></font>
 </div>
-</body>
-</html>
+
+
+</body></html>
