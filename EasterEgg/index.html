@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>China</title>
+</head>
+<body>
+<form>
+<textarea name="start" id="start" placeholder="Русский текст здесь"></textarea><br>
+<input type="button" onClick="change()" value="Изменить">
+</form>
+<br>
+<textarea name="finish"  id="finish" placeholder="Результат здесь"></textarea>
+
+<script>
+function change() {
+		var start = document.getElementById("start").value;
+		var len = start.length;
+		var result = new Array();
+		for(i = 0; i < len; i++) {
+			result[i] = switcher(start[i]);
+		}
+		document.getElementById("finish").value = result.join("");
+}
+alert("Хуй пизда сковорода - Вы нашли пасхалку");
+function switcher(symbol) {
+	switch(symbol) {
+		case "а":
+			return "丹";
+			break;
+		case "б":
+			return "石";
+			break;
+		case "в":
+			return "归";
+			break;
+		case "г":
+			return "厂";
+			break;
+		case "д":
+			return "亼";
+			break;
+		case "е":
+			return "仨";
+			break;
+		case "ё":
+			return "仨";
+			break;
+		case "ж":
+			return "水";
+			break;
+		case "з":
+			return "乡";
+			break;
+		case "и":
+			return "认";
+			break;
+		case "й":
+			return "认";
+			break;
+		case "к":
+			return "片";
+			break;
+		case "л":
+			return "几";
+			break;
+		case "м":
+			return "从";
+			break;
+		case "н":
+			return "廾";
+			break;
+		case "о":
+			return "口";
+			break;
+		case "п":
+			return "刀";
+			break;
+		case "р":
+			return "尸";
+			break;
+		case "с":
+			return "仁";
+			break;
+		case "т":
+			return "丁";
+			break;
+		case "у":
+			return "丫";
+			break;
+		case "ф":
+			return "中";
+			break;
+		case "х":
+			return "乂";
+			break;
+		case "ц":
+			return "凵";
+			break;
+		case "ч":
+			return "丩";
+			break;
+		case "ш":
+			return "山";
+			break;
+		case "щ":
+			return "山";
+			break;
+		case "ъ":
+			return "乙";
+			break;
+		case "ы":
+			return "辷亅";
+			break;
+		case "ь":
+			return "乙";
+			break;
+		case "э":
+			return "刁";
+			break;
+		case "ю":
+			return "扣";
+			break;
+		case "я":
+			return "牙";
+			break;
+		case "А":
+			return "丹";
+			break;
+		case "Б":
+			return "石";
+			break;
+		case "В":
+			return "归";
+			break;
+		case "Г":
+			return "厂";
+			break;
+		case "Д":
+			return "亼";
+			break;
+		case "Е":
+			return "仨";
+			break;
+		case "Ё":
+			return "仨";
+			break;
+		case "Ж":
+			return "水";
+			break;
+		case "З":
+			return "乡";
+			break;
+		case "И":
+			return "认";
+			break;
+		case "Й":
+			return "认";
+			break;
+		case "К":
+			return "片";
+			break;
+		case "Л":
+			return "几";
+			break;
+		case "М":
+			return "从";
+			break;
+		case "Н":
+			return "廾";
+			break;
+		case "О":
+			return "口";
+			break;
+		case "П":
+			return "刀";
+			break;
+		case "Р":
+			return "尸";
+			break;
+		case "С":
+			return "仁";
+			break;
+		case "Т":
+			return "丁";
+			break;
+		case "У":
+			return "丫";
+			break;
+		case "Ф":
+			return "中";
+			break;
+		case "Х":
+			return "乂";
+			break;
+		case "Ц":
+			return "凵";
+			break;
+		case "Ч":
+			return "丩";
+			break;
+		case "Ш":
+			return "山";
+			break;
+		case "Щ":
+			return "山";
+			break;
+		case "Ъ":
+			return "乙";
+			break;
+		case "Ы":
+			return "辷亅";
+			break;
+		case "Ь":
+			return "乙";
+			break;
+		case "Э":
+			return "刁";
+			break;
+		case "Ю":
+			return "扣";
+			break;
+		case "Я":
+			return "牙";
+			break;
+		case "a":
+			return "丹";
+			break;
+		case "b":
+			return "归";
+			break;
+		case "c":
+			return "仁";
+			break;
+		case "d":
+			return "力";
+			break;
+		case "e":
+			return "仨";
+			break;
+		case "f":
+			return "下";
+			break;
+		case "g":
+			return "呂";
+			break;
+		case "h":
+			return "廾";
+			break;
+		case "i":
+			return "工";
+			break;
+		case "j":
+			return "亅";
+			break;
+		case "k":
+			return "片";
+			break;
+		case "l":
+			return "乚";
+			break;
+		case "m":
+			return "从";
+			break;
+		case "n":
+			return "卜l";
+			break;
+		case "o":
+			return "口";
+			break;
+		case "p":
+			return "尸";
+			break;
+		case "q":
+			return "贝";
+			break;
+		case "r":
+			return "尺";
+			break;
+		case "s":
+			return "与";
+			break;
+		case "t":
+			return "丁";
+			break;
+		case "u":
+			return "凵";
+			break;
+		case "v":
+			return "V";
+			break;
+		case "w":
+			return "山";
+			break;
+		case "x":
+			return "乂";
+			break;
+		case "y":
+			return "丫";
+			break;
+		case "z":
+			return "乙";
+			break;
+		case "A":
+			return "丹";
+			break;
+		case "B":
+			return "归";
+			break;
+		case "C":
+			return "仁";
+			break;
+		case "D":
+			return "力";
+			break;
+		case "E":
+			return "仨";
+			break;
+		case "F":
+			return "下";
+			break;
+		case "G":
+			return "呂";
+			break;
+		case "H":
+			return "廾";
+			break;
+		case "I":
+			return "工";
+			break;
+		case "J":
+			return "亅";
+			break;
+		case "K":
+			return "片";
+			break;
+		case "L":
+			return "乚";
+			break;
+		case "M":
+			return "从";
+			break;
+		case "N":
+			return "卜l";
+			break;
+		case "O":
+			return "口";
+			break;
+		case "P":
+			return "尸";
+			break;
+		case "Q":
+			return "贝";
+			break;
+		case "R":
+			return "尺";
+			break;
+		case "S":
+			return "与";
+			break;
+		case "T":
+			return "丁";
+			break;
+		case "U":
+			return "凵";
+			break;
+		case "V":
+			return "V";
+			break;
+		case "W":
+			return "山";
+			break;
+		case "X":
+			return "乂";
+			break;
+		case "Y":
+			return "丫";
+			break;
+		case "Z":
+			return "乙";
+			break;
+		default:
+			return symbol;
+			break;
+	}
+}
+</script>
+</body>
+</html>
