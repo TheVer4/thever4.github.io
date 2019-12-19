@@ -8,7 +8,7 @@
 <style>
 body{
 	overflow: hidden;
-	background: url('backgrounds/bg.jpeg') no-repeat;
+	background: #000000; /*url('backgrounds/bg.jpeg') no-repeat;*/
 	 -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;
 }
 #main {
@@ -19,6 +19,12 @@ body{
 	color: #FFFFFF;
 	background: ;
 	padding: 20px;
+}
+@font-face {
+    font-family: 'AktivGroteskCorp-Regular';
+    src: local('Aktiv Grotesk Corp'), local('AktivGroteskCorp-Regular'), url('fonts/AktivGroteskCorp-Regular.ttf') format('truetype');
+    font-size: 20pt;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Great Vibes Regular';
@@ -46,6 +52,7 @@ body{
 }
 #logo {
 	font-size: 100pt;
+	letter-spacing: -20px;
 	text-shadow: 5px 5px 10px #000000;
 }
 #footer {
@@ -176,7 +183,7 @@ body{
 	</script>
 <div id="main">
 <div id="content">
-<font color="white" size="70" face="Great Vibes Regular" id="logo" onClick="Easter()">@TheVer4</font>
+<font color="white" size="70" face="AktivGroteskCorp-Regular" id="logo" onClick="Easter()">THΞVΞR4</font>
 <br>
 <font face="Cleanvertising Light" size="4">Hello, dear friend!
 <br>
@@ -193,7 +200,7 @@ Maybe, that links can help you</font>
 </div>
 </div>
 <div id="footer">
-<font color="gray" face="Cleanvertising Light" size="3" style="margin-left: 46%;"><b>@TheVer4 © 2017-2019</b></font>
+<font color="gray" face="Cleanvertising Light" size="3" style="margin-left: 46%;"><b>@TheVer4 © 2017-2020</b></font>
 <font color="gray" face="Cleanvertising Light" size="6" style="float: right; opacity: 0.4;"><b>12+</b></font>
 </div>
 
